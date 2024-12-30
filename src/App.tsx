@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className='main_bg'>
-      <h2>დავეხმაროთ ბავშვებს და მოხუცებს, <br/>რომლებიც შიმშილობენ</h2>
+      <h2 className='header'>დავეხმაროთ ბავშვებს და მოხუცებს, <br/>რომლებიც შიმშილობენ</h2>
       <ToastContainer />
       <div className="content">
         {ibanArray.map((item, index) => (
@@ -55,7 +55,7 @@ function App() {
           </div>
         ))}
       </div>
-      <p>ტელ: 596919191</p>
+      <h3>mob.: 596919191</h3>
     </div>
   )
 }
