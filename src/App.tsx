@@ -44,18 +44,18 @@ function App() {
 
   return (
     <div className='main_bg'>
-      <h2 className='header'>დავეხმაროთ ბავშვებს და მოხუცებს, <br/>რომლებიც შიმშილობენ</h2>
+      <h1 className='header'>დავეხმაროთ ბავშვებს და მოხუცებს, <br/>რომლებიც შიმშილობენ</h1>
       <ToastContainer />
       <div className="content">
         {ibanArray.map((item, index) => (
           <div className="iban-card" key={index}>
-            <h2>{item.bank}</h2>
+            <h2 className='bank_name'>{item.bank}</h2>
             <p onClick={() => handleCopy(item.iban)}><strong>ანგარიში:</strong> {item.iban}</p>
             <p><strong>მიმღები:</strong> {item.person}</p>
           </div>
         ))}
       </div>
-      <h3>mob.: 596919191</h3>
+      <h3>Mob.: 596919191</h3>
     </div>
   )
 }
